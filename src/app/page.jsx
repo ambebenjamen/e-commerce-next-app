@@ -1,30 +1,34 @@
 'use client'
-import Link from "next/link";
 import { useRef, useState } from "react";
-// import page from './dashboard/page';
 import NavbarComponent from '@/src/components/navbar/NavbarComponent';
-import  Banner  from '@/src/components/Banners/Banner';
+import Banner from '@/src/components/Banners/Banner';
+import Image from 'next/image';
+import Card from '@/src/components/Cards/Card';
 
-const Home = () =>{
-  const [counter,setCounter] = useState(0);
+const Home = () => {
+  const [counter, setCounter] = useState(0);
   const clickRef = useRef(0);
+
   const handleClick = () => {
     clickRef.current = clickRef.current + 1;
-    alert('you clicked' + clickRef.current + 'times'
-    );
-  }
+    alert('You clicked ' + clickRef.current + ' times');
+  };
 
-  return(
+  return (
     <> 
-    <NavbarComponent />
-    <Banner/>
-    <div className="h-[100vh] w[100%] items-center justify-center">
-  
+      <NavbarComponent />
+      <div className="h-full w-full  items-center justify-center p-5">
+      <Banner />
+      <div className="h-[100vh] w-full flex items-center justify-center p-5 flex-wrap gap-4">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+
+      </div>
       </div>
     </>
-   
   );
-}
-export default Home;
+};
 
-{/* <Link href={'/dashboard'}>dashboard page</Link> */}
+export default Home;
