@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import styles from './page.module.css'
-export default function page() {
+export default function Page() {
     let router = useRouter();
     let number = 5
   return (
