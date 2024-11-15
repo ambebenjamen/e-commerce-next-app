@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import NavbarComponent from '@/src/components/navbar/NavbarComponent';
 import Banner from '@/src/components/Banners/Banner';
 import Image from 'next/image';
-import Card from '@/src/components/Cards/Card';
+import Card from '@/src/components/cards/Card';
 
 const Home = () => {
   const [counter, setCounter] = useState(0);
@@ -20,8 +20,6 @@ const Home = () => {
       <div className="h-full w-full  items-center justify-center p-5">
       <Banner />
       <div className="h-[100vh] w-full flex items-center justify-center p-5 flex-wrap gap-4">
-      <Card/>
-      <Card/>
       <Card/>
       <Card/>
 

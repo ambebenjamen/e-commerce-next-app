@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function card() {
+export default function Card() {
   return (
     <div>
       {/* All carts */}
@@ -19,7 +19,7 @@ export default function card() {
             </div>
           </div>
     </div>
-  )
+  );
 }
 
 
