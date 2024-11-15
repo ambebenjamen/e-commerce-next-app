@@ -22,7 +22,7 @@ const Home = () => {
       <div className="h-[100vh] w-full flex items-center justify-center p-5 flex-wrap gap-4">
       <Card/>
       <Card/>
-
+       
       </div>
       </div>
     </>
