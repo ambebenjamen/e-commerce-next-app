@@ -15,6 +15,7 @@ export default function Card() {
                 layout="fill" 
                 objectFit="cover" 
                 objectPosition="center" 
+                
               />
             </div>
           </div>
